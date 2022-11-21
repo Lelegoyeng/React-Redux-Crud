@@ -127,12 +127,7 @@ const TutorialsList = () => {
               Edit
             </Link>
           </div>
-        ) : (
-          <div>
-            <br />
-            <p>Please click on a Tutorial...</p>
-          </div>
-        )}
+        ) : ""}
       </div>
     </div>
   );

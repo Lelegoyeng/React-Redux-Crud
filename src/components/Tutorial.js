@@ -5,10 +5,10 @@ import TutorialDataService from "../services/TutorialService";
 
 const Tutorial = (props) => {
   const initialTutorialState = {
-    id: null,
+    id: 1,
     title: "",
     description: "",
-    published: false
+    published: true
   };
   const [currentTutorial, setCurrentTutorial] = useState(initialTutorialState);
   const [message, setMessage] = useState("");
@@ -143,12 +143,7 @@ const Tutorial = (props) => {
           </button>
           <p>{message}</p>
         </div>
-      ) : (
-        <div>
-          <br />
-          <p>Please click on a Tutorial...</p>
-        </div>
-      )}
+      ) : "" }
     </div>
   );
 };
